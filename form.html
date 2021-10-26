@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Create Your Account</h2>
+    </div>
+    <form class="form" id="form">
+        <div class="form-control">
+        <label>Enter Username: </label><br>
+        <input type="text" id="username" placeholder="example@123" required>
+        </div>
+        <div class="form-control">
+            <label>Enter Password: </label><br>
+            <input type="password" id="password" required>
+        </div>
+        <div class="form-control">
+            <label>Enter Email: </label><br>
+            <input type="email" id="email" placeholder="example@gmail.com" required>
+        </div>
+        <div class="form-control">
+            <label>Enter Birth date: </label><br>
+            <input type="date" id="birthdate" required>
+        </div> 
+        <div class="form-control">
+            <label>Enter City: </label>
+            <select id="city">
+                <option>Mumbai</option>
+                <option>New Delhi</option>
+                <option>Bangalore</option>
+                <option>Hyderabad</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>Programming langugaes known</label><br>
+            <input type="checkbox" id="c" value="C">C<br>
+            <input type="checkbox" id="cpp" value="C++">C++<br>
+            <input type="checkbox" id="java" value="Java">Java<br>
+            <input type="checkbox" id="javascript" value=JavaScript>JavaScript<br>
+            <input type="checkbox" id="python" value="Python">Python<br>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="form.js"></script>
+</body>
+
+</html>
